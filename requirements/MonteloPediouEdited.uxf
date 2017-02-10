@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <help_text>lt=&lt;&lt;&lt;-
+counter:Integer</help_text>
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>282</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Producer
+--
+FirstName: String
+LastName: String
+email: EmailAddress
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>492</x>
+      <y>276</y>
+      <w>120</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Show
+--
+name: String
+playDateTime: Calendar
+duration: Duration
+/addTrackToList
+/addAdsToList</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>126</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>AdPlayEvent
+--
+dateTime: Calendar
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>198</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Duration
+--
+durationInSeconds: integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>240</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>PlaybackZone
+--
+fromTime: Calendar
+toTime: Calendar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>348</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>EmailAddress
+--
+email: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>318</x>
+      <y>300</y>
+      <w>186</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+creates
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>582</x>
+      <y>396</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>PlaylistShow
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>396</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>AutoShow
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>306</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Genre
+--
+genre: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>582</x>
+      <y>120</y>
+      <w>126</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Ad
+--
+brand: String
+duration: Duration
+zone: PlaybackZone
+fromDate: Calendar
+toDate: Calendar
+playsPerZone: Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>348</y>
+      <w>114</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>348</y>
+      <w>78</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>372</x>
+      <y>120</y>
+      <w>114</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Track
+--
+title: String
+artist: String
+genre: Genre
+duration: Duration
+releaseYear: integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>192</y>
+      <w>102</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-
+has
+m1=*
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>24</y>
+      <w>126</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Administrator
+--
+FirstName: String
+LastName: String
+email: EmailAddress</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>72</y>
+      <w>96</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+manipulates
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>72</y>
+      <w>90</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+manipulates
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>144</y>
+      <w>108</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>192</y>
+      <w>54</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-
+has
+m1=*
+m2=*</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>408</x>
+      <y>522</y>
+      <w>144</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Policies
+--
+/playedLastHour: Boolean
+/timesPlayedToday: Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>420</y>
+      <w>48</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=-
+satisfies
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+</diagram>
